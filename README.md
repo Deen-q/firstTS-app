@@ -1,3 +1,4 @@
+(used 'npx create-snowpack-app . --template @snowpack/app-template-blank-typescript --force' in an empty repo/folder)
 # New Project
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
