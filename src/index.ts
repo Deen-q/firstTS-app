@@ -1,15 +1,15 @@
-// Snowpack is a bundler --> needed so browser can access node_modules folder (bundles the folder so browser can understand it)
-// All files were deleted, if any, then 'npx create-snowpack-app . --template @snowpack/app-template-blank-typescript' was used
-// '.' means it occurs in this folder. '--force' to enable that, if it gives an error.
+import { v4 as uuidV4 } from "uuid"
+console.log(uuidV4()) // Works ✅
 
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+type Task = {
+    id: string
+    title: string
+}
 
-import confetti from 'canvas-confetti';
+// 1) make a reference to HTML elements
+const taskName = document.querySelector("#new-task-title") as HTMLInputElement
+const form = document.getElementById("new-task-form") as HTMLFormElement
+const list = document.querySelector('#list') as HTMLUListElement
 
-confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+// const storedTasks: Task[] = []
+

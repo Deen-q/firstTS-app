@@ -1,0 +1,5 @@
+- Snowpack is a bundler --> needed so browser can access node_modules folder (bundles the folder so browser can understand it)
+- without a bundler, we cannot use node modules (e.g., cannot use 'npm i uuid4')
+- All files were deleted, if any, then 'npx create-snowpack-app . --template @snowpack/app-template-blank-typescript' was used
+- '.' means it occurs in this folder. '--force' to enable that, if it gives an error.
+- 'npm start' used (opens on localhost:8080)
